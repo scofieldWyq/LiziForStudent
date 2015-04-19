@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D16493711AE3D5420052DB33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493701AE3D5420052DB33 /* Foundation.framework */; };
+		D16493731AE3D5420052DB33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493721AE3D5420052DB33 /* CoreGraphics.framework */; };
+		D16493751AE3D5420052DB33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493741AE3D5420052DB33 /* UIKit.framework */; };
+		D164937B1AE3D5420052DB33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D16493791AE3D5420052DB33 /* InfoPlist.strings */; };
+		D164937D1AE3D5420052DB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D164937C1AE3D5420052DB33 /* main.m */; };
+		D16493811AE3D5420052DB33 /* LiziAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493801AE3D5420052DB33 /* LiziAppDelegate.m */; };
+		D16493831AE3D5420052DB33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16493821AE3D5420052DB33 /* Images.xcassets */; };
+		D164938A1AE3D5420052DB33 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493891AE3D5420052DB33 /* XCTest.framework */; };
+		D164938B1AE3D5420052DB33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493701AE3D5420052DB33 /* Foundation.framework */; };
+		D164938C1AE3D5420052DB33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493741AE3D5420052DB33 /* UIKit.framework */; };
+		D16493941AE3D5420052DB33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D16493921AE3D5420052DB33 /* InfoPlist.strings */; };
+		D16493961AE3D5420052DB33 /* LiziForStudentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493951AE3D5420052DB33 /* LiziForStudentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D164938D1AE3D5420052DB33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D16493651AE3D5420052DB33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D164936C1AE3D5420052DB33;
+			remoteInfo = LiziForStudent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D164936D1AE3D5420052DB33 /* LiziForStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiziForStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16493701AE3D5420052DB33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D16493721AE3D5420052DB33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D16493741AE3D5420052DB33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D16493781AE3D5420052DB33 /* LiziForStudent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiziForStudent-Info.plist"; sourceTree = "<group>"; };
+		D164937A1AE3D5420052DB33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D164937C1AE3D5420052DB33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D164937E1AE3D5420052DB33 /* LiziForStudent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiziForStudent-Prefix.pch"; sourceTree = "<group>"; };
+		D164937F1AE3D5420052DB33 /* LiziAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiziAppDelegate.h; sourceTree = "<group>"; };
+		D16493801AE3D5420052DB33 /* LiziAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiziAppDelegate.m; sourceTree = "<group>"; };
+		D16493821AE3D5420052DB33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D16493881AE3D5420052DB33 /* LiziForStudentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiziForStudentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16493891AE3D5420052DB33 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D16493911AE3D5420052DB33 /* LiziForStudentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiziForStudentTests-Info.plist"; sourceTree = "<group>"; };
+		D16493931AE3D5420052DB33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D16493951AE3D5420052DB33 /* LiziForStudentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiziForStudentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D164936A1AE3D5420052DB33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16493731AE3D5420052DB33 /* CoreGraphics.framework in Frameworks */,
+				D16493751AE3D5420052DB33 /* UIKit.framework in Frameworks */,
+				D16493711AE3D5420052DB33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16493851AE3D5420052DB33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D164938A1AE3D5420052DB33 /* XCTest.framework in Frameworks */,
+				D164938C1AE3D5420052DB33 /* UIKit.framework in Frameworks */,
+				D164938B1AE3D5420052DB33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D16493641AE3D5420052DB33 = {
+			isa = PBXGroup;
+			children = (
+				D16493761AE3D5420052DB33 /* LiziForStudent */,
+				D164938F1AE3D5420052DB33 /* LiziForStudentTests */,
+				D164936F1AE3D5420052DB33 /* Frameworks */,
+				D164936E1AE3D5420052DB33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D164936E1AE3D5420052DB33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D164936D1AE3D5420052DB33 /* LiziForStudent.app */,
+				D16493881AE3D5420052DB33 /* LiziForStudentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D164936F1AE3D5420052DB33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D16493701AE3D5420052DB33 /* Foundation.framework */,
+				D16493721AE3D5420052DB33 /* CoreGraphics.framework */,
+				D16493741AE3D5420052DB33 /* UIKit.framework */,
+				D16493891AE3D5420052DB33 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D16493761AE3D5420052DB33 /* LiziForStudent */ = {
+			isa = PBXGroup;
+			children = (
+				D164937F1AE3D5420052DB33 /* LiziAppDelegate.h */,
+				D16493801AE3D5420052DB33 /* LiziAppDelegate.m */,
+				D16493821AE3D5420052DB33 /* Images.xcassets */,
+				D16493771AE3D5420052DB33 /* Supporting Files */,
+			);
+			path = LiziForStudent;
+			sourceTree = "<group>";
+		};
+		D16493771AE3D5420052DB33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D16493781AE3D5420052DB33 /* LiziForStudent-Info.plist */,
+				D16493791AE3D5420052DB33 /* InfoPlist.strings */,
+				D164937C1AE3D5420052DB33 /* main.m */,
+				D164937E1AE3D5420052DB33 /* LiziForStudent-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D164938F1AE3D5420052DB33 /* LiziForStudentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D16493951AE3D5420052DB33 /* LiziForStudentTests.m */,
+				D16493901AE3D5420052DB33 /* Supporting Files */,
+			);
+			path = LiziForStudentTests;
+			sourceTree = "<group>";
+		};
+		D16493901AE3D5420052DB33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D16493911AE3D5420052DB33 /* LiziForStudentTests-Info.plist */,
+				D16493921AE3D5420052DB33 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D164936C1AE3D5420052DB33 /* LiziForStudent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D16493991AE3D5420052DB33 /* Build configuration list for PBXNativeTarget "LiziForStudent" */;
+			buildPhases = (
+				D16493691AE3D5420052DB33 /* Sources */,
+				D164936A1AE3D5420052DB33 /* Frameworks */,
+				D164936B1AE3D5420052DB33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiziForStudent;
+			productName = LiziForStudent;
+			productReference = D164936D1AE3D5420052DB33 /* LiziForStudent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D16493871AE3D5420052DB33 /* LiziForStudentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D164939C1AE3D5420052DB33 /* Build configuration list for PBXNativeTarget "LiziForStudentTests" */;
+			buildPhases = (
+				D16493841AE3D5420052DB33 /* Sources */,
+				D16493851AE3D5420052DB33 /* Frameworks */,
+				D16493861AE3D5420052DB33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D164938E1AE3D5420052DB33 /* PBXTargetDependency */,
+			);
+			name = LiziForStudentTests;
+			productName = LiziForStudentTests;
+			productReference = D16493881AE3D5420052DB33 /* LiziForStudentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D16493651AE3D5420052DB33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Lizi;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "吴英强";
+				TargetAttributes = {
+					D16493871AE3D5420052DB33 = {
+						TestTargetID = D164936C1AE3D5420052DB33;
+					};
+				};
+			};
+			buildConfigurationList = D16493681AE3D5420052DB33 /* Build configuration list for PBXProject "LiziForStudent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D16493641AE3D5420052DB33;
+			productRefGroup = D164936E1AE3D5420052DB33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D164936C1AE3D5420052DB33 /* LiziForStudent */,
+				D16493871AE3D5420052DB33 /* LiziForStudentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D164936B1AE3D5420052DB33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D164937B1AE3D5420052DB33 /* InfoPlist.strings in Resources */,
+				D16493831AE3D5420052DB33 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16493861AE3D5420052DB33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16493941AE3D5420052DB33 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D16493691AE3D5420052DB33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16493811AE3D5420052DB33 /* LiziAppDelegate.m in Sources */,
+				D164937D1AE3D5420052DB33 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16493841AE3D5420052DB33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16493961AE3D5420052DB33 /* LiziForStudentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D164938E1AE3D5420052DB33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D164936C1AE3D5420052DB33 /* LiziForStudent */;
+			targetProxy = D164938D1AE3D5420052DB33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D16493791AE3D5420052DB33 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D164937A1AE3D5420052DB33 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D16493921AE3D5420052DB33 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D16493931AE3D5420052DB33 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D16493971AE3D5420052DB33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D16493981AE3D5420052DB33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D164939A1AE3D5420052DB33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiziForStudent/LiziForStudent-Prefix.pch";
+				INFOPLIST_FILE = "LiziForStudent/LiziForStudent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D164939B1AE3D5420052DB33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiziForStudent/LiziForStudent-Prefix.pch";
+				INFOPLIST_FILE = "LiziForStudent/LiziForStudent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D164939D1AE3D5420052DB33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiziForStudent.app/LiziForStudent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiziForStudent/LiziForStudent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LiziForStudentTests/LiziForStudentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D164939E1AE3D5420052DB33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LiziForStudent.app/LiziForStudent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LiziForStudent/LiziForStudent-Prefix.pch";
+				INFOPLIST_FILE = "LiziForStudentTests/LiziForStudentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D16493681AE3D5420052DB33 /* Build configuration list for PBXProject "LiziForStudent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16493971AE3D5420052DB33 /* Debug */,
+				D16493981AE3D5420052DB33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D16493991AE3D5420052DB33 /* Build configuration list for PBXNativeTarget "LiziForStudent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D164939A1AE3D5420052DB33 /* Debug */,
+				D164939B1AE3D5420052DB33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D164939C1AE3D5420052DB33 /* Build configuration list for PBXNativeTarget "LiziForStudentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D164939D1AE3D5420052DB33 /* Debug */,
+				D164939E1AE3D5420052DB33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D16493651AE3D5420052DB33 /* Project object */;
+}
