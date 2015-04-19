@@ -7,6 +7,8 @@
 //
 
 #import "LiziAppDelegate.h"
+#import "NUPTFirstMainPage.h"
+#import "LiziColor.h"
 
 @implementation LiziAppDelegate
 
@@ -14,9 +16,41 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    /* create first page */
+    NUPTFirstMainPage *Mp = [[NUPTFirstMainPage alloc] init];
+    //    mainViewController *m = [[mainViewController alloc] init];
+    /* create a navigation container and add first page in */
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:Mp];
+    
+    /* set navigation property */
+    [self setNavigationProperty:nav];
+    
+    /* set the nav as root view navigation */
+    self.window.rootViewController = nav;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)setNavigationProperty:(UINavigationController *)nvc{
+    
+    /* in first page, hide the navigation bar.
+     */
+    //    [nvc.navigationBar setHidden:YES];
+    
+    
+    /* set some property for status bar
+     */
+    
+    UIView *statusBarGround = [[UIView alloc] init];
+    [statusBarGround setFrame:CGRectMake(0, -20, CGRectGetWidth(self.window.frame), 20)];
+    [statusBarGround setBackgroundColor:[LiziColor statusBarColor]];//set status bar color
+    [nvc.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav"] forBarMetrics:UIBarMetricsDefault];//set navigationBar color.
+    [nvc.navigationBar addSubview:statusBarGround];
+    [nvc.navigationBar setTintColor:[UIColor whiteColor]]; //set navigation bar title color.
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

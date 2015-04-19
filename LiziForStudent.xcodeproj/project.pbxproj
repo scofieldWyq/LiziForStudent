@@ -19,6 +19,38 @@
 		D164938C1AE3D5420052DB33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493741AE3D5420052DB33 /* UIKit.framework */; };
 		D16493941AE3D5420052DB33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D16493921AE3D5420052DB33 /* InfoPlist.strings */; };
 		D16493961AE3D5420052DB33 /* LiziForStudentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493951AE3D5420052DB33 /* LiziForStudentTests.m */; };
+		D16493D01AE3D6080052DB33 /* alarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493A01AE3D6080052DB33 /* alarmViewController.m */; };
+		D16493D11AE3D6080052DB33 /* alarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493A11AE3D6080052DB33 /* alarmViewController.xib */; };
+		D16493D21AE3D6080052DB33 /* changeInforViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493A21AE3D6080052DB33 /* changeInforViews.xib */; };
+		D16493D31AE3D6080052DB33 /* latestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493A41AE3D6080052DB33 /* latestCell.m */; };
+		D16493D41AE3D6080052DB33 /* latestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493A51AE3D6080052DB33 /* latestCell.xib */; };
+		D16493D51AE3D6080052DB33 /* latestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493A71AE3D6080052DB33 /* latestViewController.m */; };
+		D16493D61AE3D6080052DB33 /* latestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493A81AE3D6080052DB33 /* latestViewController.xib */; };
+		D16493D71AE3D6080052DB33 /* LiziCheckStatusCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493AA1AE3D6080052DB33 /* LiziCheckStatusCode.m */; };
+		D16493D81AE3D6080052DB33 /* LiziColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493AC1AE3D6080052DB33 /* LiziColor.m */; };
+		D16493D91AE3D6080052DB33 /* LiziHttpRequired.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493AE1AE3D6080052DB33 /* LiziHttpRequired.m */; };
+		D16493DA1AE3D6080052DB33 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493B01AE3D6080052DB33 /* mainViewController.m */; };
+		D16493DB1AE3D6080052DB33 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493B11AE3D6080052DB33 /* mainViewController.xib */; };
+		D16493DC1AE3D6080052DB33 /* menuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493B31AE3D6080052DB33 /* menuViewController.m */; };
+		D16493DD1AE3D6080052DB33 /* menuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493B41AE3D6080052DB33 /* menuViewController.xib */; };
+		D16493DE1AE3D6080052DB33 /* myInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493B61AE3D6080052DB33 /* myInfoViewController.m */; };
+		D16493DF1AE3D6080052DB33 /* myInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493B71AE3D6080052DB33 /* myInfoViewController.xib */; };
+		D16493E01AE3D6080052DB33 /* NUPTChangePhoneInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493B91AE3D6080052DB33 /* NUPTChangePhoneInformation.m */; };
+		D16493E11AE3D6080052DB33 /* NUPTFirstMainPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493BB1AE3D6080052DB33 /* NUPTFirstMainPage.m */; };
+		D16493E21AE3D6080052DB33 /* NUPTFirstMainPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493BC1AE3D6080052DB33 /* NUPTFirstMainPage.xib */; };
+		D16493E31AE3D6080052DB33 /* NUPTLoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493BE1AE3D6080052DB33 /* NUPTLoginPage.m */; };
+		D16493E41AE3D6080052DB33 /* NUPTLoginPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493BF1AE3D6080052DB33 /* NUPTLoginPage.xib */; };
+		D16493E51AE3D6080052DB33 /* NUPTRegisterPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493C11AE3D6080052DB33 /* NUPTRegisterPage.m */; };
+		D16493E61AE3D6080052DB33 /* NUPTRegisterPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493C21AE3D6080052DB33 /* NUPTRegisterPage.xib */; };
+		D16493E71AE3D6080052DB33 /* settingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493C41AE3D6080052DB33 /* settingViewController.m */; };
+		D16493E81AE3D6080052DB33 /* settingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493C51AE3D6080052DB33 /* settingViewController.xib */; };
+		D16493E91AE3D6080052DB33 /* signUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493C71AE3D6080052DB33 /* signUpCell.m */; };
+		D16493EA1AE3D6080052DB33 /* signUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493C81AE3D6080052DB33 /* signUpCell.xib */; };
+		D16493EB1AE3D6080052DB33 /* signUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493CA1AE3D6080052DB33 /* signUpViewController.m */; };
+		D16493EC1AE3D6080052DB33 /* signUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16493CB1AE3D6080052DB33 /* signUpViewController.xib */; };
+		D16493ED1AE3D6080052DB33 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493CD1AE3D6080052DB33 /* Tools.m */; };
+		D16493EE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */; };
+		D16493F11AE3D64C0052DB33 /* LiziStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493F01AE3D64C0052DB33 /* LiziStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +80,57 @@
 		D16493911AE3D5420052DB33 /* LiziForStudentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiziForStudentTests-Info.plist"; sourceTree = "<group>"; };
 		D16493931AE3D5420052DB33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D16493951AE3D5420052DB33 /* LiziForStudentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiziForStudentTests.m; sourceTree = "<group>"; };
+		D164939F1AE3D6080052DB33 /* alarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alarmViewController.h; sourceTree = "<group>"; };
+		D16493A01AE3D6080052DB33 /* alarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alarmViewController.m; sourceTree = "<group>"; };
+		D16493A11AE3D6080052DB33 /* alarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = alarmViewController.xib; sourceTree = "<group>"; };
+		D16493A21AE3D6080052DB33 /* changeInforViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = changeInforViews.xib; sourceTree = "<group>"; };
+		D16493A31AE3D6080052DB33 /* latestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = latestCell.h; sourceTree = "<group>"; };
+		D16493A41AE3D6080052DB33 /* latestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = latestCell.m; sourceTree = "<group>"; };
+		D16493A51AE3D6080052DB33 /* latestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = latestCell.xib; sourceTree = "<group>"; };
+		D16493A61AE3D6080052DB33 /* latestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = latestViewController.h; sourceTree = "<group>"; };
+		D16493A71AE3D6080052DB33 /* latestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = latestViewController.m; sourceTree = "<group>"; };
+		D16493A81AE3D6080052DB33 /* latestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = latestViewController.xib; sourceTree = "<group>"; };
+		D16493A91AE3D6080052DB33 /* LiziCheckStatusCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziCheckStatusCode.h; sourceTree = "<group>"; };
+		D16493AA1AE3D6080052DB33 /* LiziCheckStatusCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziCheckStatusCode.m; sourceTree = "<group>"; };
+		D16493AB1AE3D6080052DB33 /* LiziColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziColor.h; sourceTree = "<group>"; };
+		D16493AC1AE3D6080052DB33 /* LiziColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziColor.m; sourceTree = "<group>"; };
+		D16493AD1AE3D6080052DB33 /* LiziHttpRequired.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziHttpRequired.h; sourceTree = "<group>"; };
+		D16493AE1AE3D6080052DB33 /* LiziHttpRequired.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziHttpRequired.m; sourceTree = "<group>"; };
+		D16493AF1AE3D6080052DB33 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		D16493B01AE3D6080052DB33 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
+		D16493B11AE3D6080052DB33 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
+		D16493B21AE3D6080052DB33 /* menuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuViewController.h; sourceTree = "<group>"; };
+		D16493B31AE3D6080052DB33 /* menuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuViewController.m; sourceTree = "<group>"; };
+		D16493B41AE3D6080052DB33 /* menuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = menuViewController.xib; sourceTree = "<group>"; };
+		D16493B51AE3D6080052DB33 /* myInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myInfoViewController.h; sourceTree = "<group>"; };
+		D16493B61AE3D6080052DB33 /* myInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myInfoViewController.m; sourceTree = "<group>"; };
+		D16493B71AE3D6080052DB33 /* myInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myInfoViewController.xib; sourceTree = "<group>"; };
+		D16493B81AE3D6080052DB33 /* NUPTChangePhoneInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPTChangePhoneInformation.h; sourceTree = "<group>"; };
+		D16493B91AE3D6080052DB33 /* NUPTChangePhoneInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUPTChangePhoneInformation.m; sourceTree = "<group>"; };
+		D16493BA1AE3D6080052DB33 /* NUPTFirstMainPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPTFirstMainPage.h; sourceTree = "<group>"; };
+		D16493BB1AE3D6080052DB33 /* NUPTFirstMainPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUPTFirstMainPage.m; sourceTree = "<group>"; };
+		D16493BC1AE3D6080052DB33 /* NUPTFirstMainPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NUPTFirstMainPage.xib; sourceTree = "<group>"; };
+		D16493BD1AE3D6080052DB33 /* NUPTLoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPTLoginPage.h; sourceTree = "<group>"; };
+		D16493BE1AE3D6080052DB33 /* NUPTLoginPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUPTLoginPage.m; sourceTree = "<group>"; };
+		D16493BF1AE3D6080052DB33 /* NUPTLoginPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NUPTLoginPage.xib; sourceTree = "<group>"; };
+		D16493C01AE3D6080052DB33 /* NUPTRegisterPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUPTRegisterPage.h; sourceTree = "<group>"; };
+		D16493C11AE3D6080052DB33 /* NUPTRegisterPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUPTRegisterPage.m; sourceTree = "<group>"; };
+		D16493C21AE3D6080052DB33 /* NUPTRegisterPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NUPTRegisterPage.xib; sourceTree = "<group>"; };
+		D16493C31AE3D6080052DB33 /* settingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingViewController.h; sourceTree = "<group>"; };
+		D16493C41AE3D6080052DB33 /* settingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewController.m; sourceTree = "<group>"; };
+		D16493C51AE3D6080052DB33 /* settingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = settingViewController.xib; sourceTree = "<group>"; };
+		D16493C61AE3D6080052DB33 /* signUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signUpCell.h; sourceTree = "<group>"; };
+		D16493C71AE3D6080052DB33 /* signUpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signUpCell.m; sourceTree = "<group>"; };
+		D16493C81AE3D6080052DB33 /* signUpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = signUpCell.xib; sourceTree = "<group>"; };
+		D16493C91AE3D6080052DB33 /* signUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signUpViewController.h; sourceTree = "<group>"; };
+		D16493CA1AE3D6080052DB33 /* signUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signUpViewController.m; sourceTree = "<group>"; };
+		D16493CB1AE3D6080052DB33 /* signUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = signUpViewController.xib; sourceTree = "<group>"; };
+		D16493CC1AE3D6080052DB33 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		D16493CD1AE3D6080052DB33 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		D16493CE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+mainViewControllerInstance.h"; sourceTree = "<group>"; };
+		D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+mainViewControllerInstance.m"; sourceTree = "<group>"; };
+		D16493EF1AE3D64C0052DB33 /* LiziStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziStudent.h; sourceTree = "<group>"; };
+		D16493F01AE3D64C0052DB33 /* LiziStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +190,57 @@
 		D16493761AE3D5420052DB33 /* LiziForStudent */ = {
 			isa = PBXGroup;
 			children = (
+				D16493EF1AE3D64C0052DB33 /* LiziStudent.h */,
+				D16493F01AE3D64C0052DB33 /* LiziStudent.m */,
+				D164939F1AE3D6080052DB33 /* alarmViewController.h */,
+				D16493A01AE3D6080052DB33 /* alarmViewController.m */,
+				D16493A11AE3D6080052DB33 /* alarmViewController.xib */,
+				D16493A21AE3D6080052DB33 /* changeInforViews.xib */,
+				D16493A31AE3D6080052DB33 /* latestCell.h */,
+				D16493A41AE3D6080052DB33 /* latestCell.m */,
+				D16493A51AE3D6080052DB33 /* latestCell.xib */,
+				D16493A61AE3D6080052DB33 /* latestViewController.h */,
+				D16493A71AE3D6080052DB33 /* latestViewController.m */,
+				D16493A81AE3D6080052DB33 /* latestViewController.xib */,
+				D16493A91AE3D6080052DB33 /* LiziCheckStatusCode.h */,
+				D16493AA1AE3D6080052DB33 /* LiziCheckStatusCode.m */,
+				D16493AB1AE3D6080052DB33 /* LiziColor.h */,
+				D16493AC1AE3D6080052DB33 /* LiziColor.m */,
+				D16493AD1AE3D6080052DB33 /* LiziHttpRequired.h */,
+				D16493AE1AE3D6080052DB33 /* LiziHttpRequired.m */,
+				D16493AF1AE3D6080052DB33 /* mainViewController.h */,
+				D16493B01AE3D6080052DB33 /* mainViewController.m */,
+				D16493B11AE3D6080052DB33 /* mainViewController.xib */,
+				D16493B21AE3D6080052DB33 /* menuViewController.h */,
+				D16493B31AE3D6080052DB33 /* menuViewController.m */,
+				D16493B41AE3D6080052DB33 /* menuViewController.xib */,
+				D16493B51AE3D6080052DB33 /* myInfoViewController.h */,
+				D16493B61AE3D6080052DB33 /* myInfoViewController.m */,
+				D16493B71AE3D6080052DB33 /* myInfoViewController.xib */,
+				D16493B81AE3D6080052DB33 /* NUPTChangePhoneInformation.h */,
+				D16493B91AE3D6080052DB33 /* NUPTChangePhoneInformation.m */,
+				D16493BA1AE3D6080052DB33 /* NUPTFirstMainPage.h */,
+				D16493BB1AE3D6080052DB33 /* NUPTFirstMainPage.m */,
+				D16493BC1AE3D6080052DB33 /* NUPTFirstMainPage.xib */,
+				D16493BD1AE3D6080052DB33 /* NUPTLoginPage.h */,
+				D16493BE1AE3D6080052DB33 /* NUPTLoginPage.m */,
+				D16493BF1AE3D6080052DB33 /* NUPTLoginPage.xib */,
+				D16493C01AE3D6080052DB33 /* NUPTRegisterPage.h */,
+				D16493C11AE3D6080052DB33 /* NUPTRegisterPage.m */,
+				D16493C21AE3D6080052DB33 /* NUPTRegisterPage.xib */,
+				D16493C31AE3D6080052DB33 /* settingViewController.h */,
+				D16493C41AE3D6080052DB33 /* settingViewController.m */,
+				D16493C51AE3D6080052DB33 /* settingViewController.xib */,
+				D16493C61AE3D6080052DB33 /* signUpCell.h */,
+				D16493C71AE3D6080052DB33 /* signUpCell.m */,
+				D16493C81AE3D6080052DB33 /* signUpCell.xib */,
+				D16493C91AE3D6080052DB33 /* signUpViewController.h */,
+				D16493CA1AE3D6080052DB33 /* signUpViewController.m */,
+				D16493CB1AE3D6080052DB33 /* signUpViewController.xib */,
+				D16493CC1AE3D6080052DB33 /* Tools.h */,
+				D16493CD1AE3D6080052DB33 /* Tools.m */,
+				D16493CE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.h */,
+				D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */,
 				D164937F1AE3D5420052DB33 /* LiziAppDelegate.h */,
 				D16493801AE3D5420052DB33 /* LiziAppDelegate.m */,
 				D16493821AE3D5420052DB33 /* Images.xcassets */,
@@ -221,7 +355,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D164937B1AE3D5420052DB33 /* InfoPlist.strings in Resources */,
+				D16493D41AE3D6080052DB33 /* latestCell.xib in Resources */,
+				D16493E41AE3D6080052DB33 /* NUPTLoginPage.xib in Resources */,
+				D16493EC1AE3D6080052DB33 /* signUpViewController.xib in Resources */,
+				D16493D11AE3D6080052DB33 /* alarmViewController.xib in Resources */,
+				D16493DD1AE3D6080052DB33 /* menuViewController.xib in Resources */,
+				D16493D61AE3D6080052DB33 /* latestViewController.xib in Resources */,
+				D16493E21AE3D6080052DB33 /* NUPTFirstMainPage.xib in Resources */,
+				D16493DB1AE3D6080052DB33 /* mainViewController.xib in Resources */,
 				D16493831AE3D5420052DB33 /* Images.xcassets in Resources */,
+				D16493D21AE3D6080052DB33 /* changeInforViews.xib in Resources */,
+				D16493E61AE3D6080052DB33 /* NUPTRegisterPage.xib in Resources */,
+				D16493E81AE3D6080052DB33 /* settingViewController.xib in Resources */,
+				D16493DF1AE3D6080052DB33 /* myInfoViewController.xib in Resources */,
+				D16493EA1AE3D6080052DB33 /* signUpCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +387,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16493D31AE3D6080052DB33 /* latestCell.m in Sources */,
+				D16493D01AE3D6080052DB33 /* alarmViewController.m in Sources */,
 				D16493811AE3D5420052DB33 /* LiziAppDelegate.m in Sources */,
+				D16493D81AE3D6080052DB33 /* LiziColor.m in Sources */,
 				D164937D1AE3D5420052DB33 /* main.m in Sources */,
+				D16493E31AE3D6080052DB33 /* NUPTLoginPage.m in Sources */,
+				D16493D51AE3D6080052DB33 /* latestViewController.m in Sources */,
+				D16493DA1AE3D6080052DB33 /* mainViewController.m in Sources */,
+				D16493D91AE3D6080052DB33 /* LiziHttpRequired.m in Sources */,
+				D16493EE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m in Sources */,
+				D16493ED1AE3D6080052DB33 /* Tools.m in Sources */,
+				D16493E01AE3D6080052DB33 /* NUPTChangePhoneInformation.m in Sources */,
+				D16493E11AE3D6080052DB33 /* NUPTFirstMainPage.m in Sources */,
+				D16493DE1AE3D6080052DB33 /* myInfoViewController.m in Sources */,
+				D16493F11AE3D64C0052DB33 /* LiziStudent.m in Sources */,
+				D16493EB1AE3D6080052DB33 /* signUpViewController.m in Sources */,
+				D16493E51AE3D6080052DB33 /* NUPTRegisterPage.m in Sources */,
+				D16493D71AE3D6080052DB33 /* LiziCheckStatusCode.m in Sources */,
+				D16493E91AE3D6080052DB33 /* signUpCell.m in Sources */,
+				D16493DC1AE3D6080052DB33 /* menuViewController.m in Sources */,
+				D16493E71AE3D6080052DB33 /* settingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
