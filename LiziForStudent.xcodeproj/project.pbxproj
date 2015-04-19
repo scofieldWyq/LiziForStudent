@@ -190,57 +190,19 @@
 		D16493761AE3D5420052DB33 /* LiziForStudent */ = {
 			isa = PBXGroup;
 			children = (
-				D16493EF1AE3D64C0052DB33 /* LiziStudent.h */,
-				D16493F01AE3D64C0052DB33 /* LiziStudent.m */,
-				D164939F1AE3D6080052DB33 /* alarmViewController.h */,
-				D16493A01AE3D6080052DB33 /* alarmViewController.m */,
-				D16493A11AE3D6080052DB33 /* alarmViewController.xib */,
-				D16493A21AE3D6080052DB33 /* changeInforViews.xib */,
-				D16493A31AE3D6080052DB33 /* latestCell.h */,
-				D16493A41AE3D6080052DB33 /* latestCell.m */,
-				D16493A51AE3D6080052DB33 /* latestCell.xib */,
-				D16493A61AE3D6080052DB33 /* latestViewController.h */,
-				D16493A71AE3D6080052DB33 /* latestViewController.m */,
-				D16493A81AE3D6080052DB33 /* latestViewController.xib */,
-				D16493A91AE3D6080052DB33 /* LiziCheckStatusCode.h */,
-				D16493AA1AE3D6080052DB33 /* LiziCheckStatusCode.m */,
-				D16493AB1AE3D6080052DB33 /* LiziColor.h */,
-				D16493AC1AE3D6080052DB33 /* LiziColor.m */,
-				D16493AD1AE3D6080052DB33 /* LiziHttpRequired.h */,
-				D16493AE1AE3D6080052DB33 /* LiziHttpRequired.m */,
-				D16493AF1AE3D6080052DB33 /* mainViewController.h */,
-				D16493B01AE3D6080052DB33 /* mainViewController.m */,
-				D16493B11AE3D6080052DB33 /* mainViewController.xib */,
-				D16493B21AE3D6080052DB33 /* menuViewController.h */,
-				D16493B31AE3D6080052DB33 /* menuViewController.m */,
-				D16493B41AE3D6080052DB33 /* menuViewController.xib */,
-				D16493B51AE3D6080052DB33 /* myInfoViewController.h */,
-				D16493B61AE3D6080052DB33 /* myInfoViewController.m */,
-				D16493B71AE3D6080052DB33 /* myInfoViewController.xib */,
-				D16493B81AE3D6080052DB33 /* NUPTChangePhoneInformation.h */,
-				D16493B91AE3D6080052DB33 /* NUPTChangePhoneInformation.m */,
-				D16493BA1AE3D6080052DB33 /* NUPTFirstMainPage.h */,
-				D16493BB1AE3D6080052DB33 /* NUPTFirstMainPage.m */,
-				D16493BC1AE3D6080052DB33 /* NUPTFirstMainPage.xib */,
-				D16493BD1AE3D6080052DB33 /* NUPTLoginPage.h */,
-				D16493BE1AE3D6080052DB33 /* NUPTLoginPage.m */,
-				D16493BF1AE3D6080052DB33 /* NUPTLoginPage.xib */,
-				D16493C01AE3D6080052DB33 /* NUPTRegisterPage.h */,
-				D16493C11AE3D6080052DB33 /* NUPTRegisterPage.m */,
-				D16493C21AE3D6080052DB33 /* NUPTRegisterPage.xib */,
-				D16493C31AE3D6080052DB33 /* settingViewController.h */,
-				D16493C41AE3D6080052DB33 /* settingViewController.m */,
-				D16493C51AE3D6080052DB33 /* settingViewController.xib */,
-				D16493C61AE3D6080052DB33 /* signUpCell.h */,
-				D16493C71AE3D6080052DB33 /* signUpCell.m */,
-				D16493C81AE3D6080052DB33 /* signUpCell.xib */,
-				D16493C91AE3D6080052DB33 /* signUpViewController.h */,
-				D16493CA1AE3D6080052DB33 /* signUpViewController.m */,
-				D16493CB1AE3D6080052DB33 /* signUpViewController.xib */,
-				D16493CC1AE3D6080052DB33 /* Tools.h */,
-				D16493CD1AE3D6080052DB33 /* Tools.m */,
-				D16493CE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.h */,
-				D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */,
+				D16493FF1AE3DC6A0052DB33 /* modle */,
+				D16493FD1AE3DC3F0052DB33 /* register */,
+				D16493FC1AE3DC260052DB33 /* login */,
+				D16493FB1AE3DC0A0052DB33 /* signIn */,
+				D16493FA1AE3DBF90052DB33 /* settings */,
+				D16493F91AE3DBE70052DB33 /* firstView */,
+				D16493F81AE3DBCC0052DB33 /* mainView */,
+				D16493F71AE3DBAF0052DB33 /* cell */,
+				D16493F61AE3DB990052DB33 /* myInfor */,
+				D16493F51AE3DB860052DB33 /* menu */,
+				D16493F41AE3DB6D0052DB33 /* latest */,
+				D16493F31AE3DB5B0052DB33 /* alarm */,
+				D16493F21AE3DB0F0052DB33 /* Tools */,
 				D164937F1AE3D5420052DB33 /* LiziAppDelegate.h */,
 				D16493801AE3D5420052DB33 /* LiziAppDelegate.m */,
 				D16493821AE3D5420052DB33 /* Images.xcassets */,
@@ -276,6 +238,156 @@
 				D16493921AE3D5420052DB33 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D16493F21AE3DB0F0052DB33 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D16493CE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.h */,
+				D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */,
+				D16493A91AE3D6080052DB33 /* LiziCheckStatusCode.h */,
+				D16493AA1AE3D6080052DB33 /* LiziCheckStatusCode.m */,
+				D16493AD1AE3D6080052DB33 /* LiziHttpRequired.h */,
+				D16493AE1AE3D6080052DB33 /* LiziHttpRequired.m */,
+				D16493CC1AE3D6080052DB33 /* Tools.h */,
+				D16493CD1AE3D6080052DB33 /* Tools.m */,
+				D16493AB1AE3D6080052DB33 /* LiziColor.h */,
+				D16493AC1AE3D6080052DB33 /* LiziColor.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		D16493F31AE3DB5B0052DB33 /* alarm */ = {
+			isa = PBXGroup;
+			children = (
+				D164939F1AE3D6080052DB33 /* alarmViewController.h */,
+				D16493A01AE3D6080052DB33 /* alarmViewController.m */,
+				D16493A11AE3D6080052DB33 /* alarmViewController.xib */,
+			);
+			name = alarm;
+			sourceTree = "<group>";
+		};
+		D16493F41AE3DB6D0052DB33 /* latest */ = {
+			isa = PBXGroup;
+			children = (
+				D16493A61AE3D6080052DB33 /* latestViewController.h */,
+				D16493A71AE3D6080052DB33 /* latestViewController.m */,
+				D16493A81AE3D6080052DB33 /* latestViewController.xib */,
+			);
+			name = latest;
+			sourceTree = "<group>";
+		};
+		D16493F51AE3DB860052DB33 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				D16493B21AE3D6080052DB33 /* menuViewController.h */,
+				D16493B31AE3D6080052DB33 /* menuViewController.m */,
+				D16493B41AE3D6080052DB33 /* menuViewController.xib */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		D16493F61AE3DB990052DB33 /* myInfor */ = {
+			isa = PBXGroup;
+			children = (
+				D16493B51AE3D6080052DB33 /* myInfoViewController.h */,
+				D16493B61AE3D6080052DB33 /* myInfoViewController.m */,
+				D16493B71AE3D6080052DB33 /* myInfoViewController.xib */,
+			);
+			name = myInfor;
+			sourceTree = "<group>";
+		};
+		D16493F71AE3DBAF0052DB33 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D16493A31AE3D6080052DB33 /* latestCell.h */,
+				D16493A41AE3D6080052DB33 /* latestCell.m */,
+				D16493A51AE3D6080052DB33 /* latestCell.xib */,
+				D16493C61AE3D6080052DB33 /* signUpCell.h */,
+				D16493C71AE3D6080052DB33 /* signUpCell.m */,
+				D16493C81AE3D6080052DB33 /* signUpCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		D16493F81AE3DBCC0052DB33 /* mainView */ = {
+			isa = PBXGroup;
+			children = (
+				D16493AF1AE3D6080052DB33 /* mainViewController.h */,
+				D16493B01AE3D6080052DB33 /* mainViewController.m */,
+				D16493B11AE3D6080052DB33 /* mainViewController.xib */,
+			);
+			name = mainView;
+			sourceTree = "<group>";
+		};
+		D16493F91AE3DBE70052DB33 /* firstView */ = {
+			isa = PBXGroup;
+			children = (
+				D16493BA1AE3D6080052DB33 /* NUPTFirstMainPage.h */,
+				D16493BB1AE3D6080052DB33 /* NUPTFirstMainPage.m */,
+				D16493BC1AE3D6080052DB33 /* NUPTFirstMainPage.xib */,
+			);
+			name = firstView;
+			sourceTree = "<group>";
+		};
+		D16493FA1AE3DBF90052DB33 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				D16493C31AE3D6080052DB33 /* settingViewController.h */,
+				D16493C41AE3D6080052DB33 /* settingViewController.m */,
+				D16493C51AE3D6080052DB33 /* settingViewController.xib */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		D16493FB1AE3DC0A0052DB33 /* signIn */ = {
+			isa = PBXGroup;
+			children = (
+				D16493C91AE3D6080052DB33 /* signUpViewController.h */,
+				D16493CA1AE3D6080052DB33 /* signUpViewController.m */,
+				D16493CB1AE3D6080052DB33 /* signUpViewController.xib */,
+			);
+			name = signIn;
+			sourceTree = "<group>";
+		};
+		D16493FC1AE3DC260052DB33 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D16493FE1AE3DC540052DB33 /* changeInfor */,
+				D16493BD1AE3D6080052DB33 /* NUPTLoginPage.h */,
+				D16493BE1AE3D6080052DB33 /* NUPTLoginPage.m */,
+				D16493BF1AE3D6080052DB33 /* NUPTLoginPage.xib */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		D16493FD1AE3DC3F0052DB33 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				D16493C01AE3D6080052DB33 /* NUPTRegisterPage.h */,
+				D16493C11AE3D6080052DB33 /* NUPTRegisterPage.m */,
+				D16493C21AE3D6080052DB33 /* NUPTRegisterPage.xib */,
+			);
+			name = register;
+			sourceTree = "<group>";
+		};
+		D16493FE1AE3DC540052DB33 /* changeInfor */ = {
+			isa = PBXGroup;
+			children = (
+				D16493A21AE3D6080052DB33 /* changeInforViews.xib */,
+				D16493B81AE3D6080052DB33 /* NUPTChangePhoneInformation.h */,
+				D16493B91AE3D6080052DB33 /* NUPTChangePhoneInformation.m */,
+			);
+			name = changeInfor;
+			sourceTree = "<group>";
+		};
+		D16493FF1AE3DC6A0052DB33 /* modle */ = {
+			isa = PBXGroup;
+			children = (
+				D16493EF1AE3D64C0052DB33 /* LiziStudent.h */,
+				D16493F01AE3D64C0052DB33 /* LiziStudent.m */,
+			);
+			name = modle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
