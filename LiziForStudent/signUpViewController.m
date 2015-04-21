@@ -40,7 +40,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *teacherName;
 @property (weak, nonatomic) IBOutlet UILabel *schoolName;
 @property (weak, nonatomic) IBOutlet UILabel *notificationUpdateTime;
-@property (weak, nonatomic) IBOutlet UILabel *notificationDetail;
+@property (weak, nonatomic) IBOutlet UITextView *notificationDetail;
+
 
 
 //sign code
@@ -113,6 +114,7 @@
     /* load curses */
     [[LiziCurses getCurses] templation];
     
+    [self.notificationDetail setEditable:NO];
 //    [self prepareData];
 
 }
