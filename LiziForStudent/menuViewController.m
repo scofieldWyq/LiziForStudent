@@ -22,27 +22,21 @@
     NSLog(@"menu");
 }
 - (IBAction)latest:(UIButton *)sender {
-//    if([self.detailController removeViewWithCode:NUPTMenuCodeLatest])
-//        [self.detailController latestContent];
-
+    
     [self.detailController changeContentView:MenuStatusLatest];
     
 }
 - (IBAction)signUp:(UIButton *)sender {
-//    if([self.detailController removeViewWithCode:NUPTMenuCodeSign])
-//        [self.detailController signInContent];
+
     [self.detailController changeContentView:MenuStatusSignIn];
     
 }
 - (IBAction)setting:(UIButton *)sender {
-//    if([self.detailController removeViewWithCode:NUPTMenuCodeSetting])
-//        [self.detailController settingContent];
 
     [self.detailController changeContentView:MenuStatusSettings];
 }
 - (IBAction)alarm:(UIButton *)sender {
-//    if([self.detailController removeViewWithCode:NUPTMenuCodeAlarm])
-//        [self.detailController alarmContent];
+
     [self.detailController changeContentView:MenuStatusNotification];
     
 }

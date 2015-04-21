@@ -72,4 +72,14 @@
 - (NSString *)description {
     return [NSString stringWithFormat:@"\nname : %@\nscholl : %@\nnumber : %@\nemail : %@\nphone : %@\nmessageCode : %@\nimg : %@\n", _name, _school, _number, _email, _phone, _messageCode, _img];
 }
+
+- (void)templation{
+    
+    _name = @"吴英强";
+    _school = @"南京邮电大学";
+    _number = @"B12041214";
+    _email = @"147036scofield@gmail.com";
+    _phone = @"18362971378";
+    
+}
 @end

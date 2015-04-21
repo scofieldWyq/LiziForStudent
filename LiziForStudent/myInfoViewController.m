@@ -93,6 +93,7 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     [stu setEmail:_editEmail.text];
     
 }
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -100,6 +101,7 @@ typedef NS_ENUM(NSInteger, SexSelected) {
 }
 
 - (void)prepareMyInfo {
+    
     LiziStudent *student = [LiziStudent me];
     
     [_name setText:student.name];
@@ -108,7 +110,12 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     [_email setText:student.email];
     
 }
+
 - (void)boy:(UIButton *)sender{
+    
+    /* set sex */
+    [[LiziStudent me] setSex:@"男"];
+    
     if( _hide ) {
         
         [self showPhotoEdit];
@@ -123,7 +130,12 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     
     
 }
+
 - (void)girl:(UIButton *)sender {
+    
+    /* set sex */
+    [[LiziStudent me] setSex:@"女"];
+    
     if( _hide ) {
         
         [self showPhotoEdit];
@@ -138,7 +150,12 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     
     
 }
+
 - (void)none:(UIButton *)sender {
+    
+    /* set sex */
+    [[LiziStudent me] setSex:@"其他"];
+    
     if( _hide ) {
         
         [self showPhotoEdit];

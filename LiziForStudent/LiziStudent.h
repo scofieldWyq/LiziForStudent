@@ -18,6 +18,10 @@
 @property (nonatomic, strong) NSString *messageCode;
 @property (nonatomic, strong) NSString *img;
 @property (nonatomic, strong) NSMutableArray *courses;
+@property (nonatomic, strong) NSString *sex;
+
 + (LiziStudent *)me;
 - (void)loadStudentData:(NSData *)data;
+
+- (void)templation;
 @end

@@ -353,7 +353,8 @@
     
 //     [self setNavigationWithMenuState:_menuCode];
     
-    
+    /* load student info */
+    [[LiziStudent me] templation];// move it out after link to server.
     
     /* setting the gesture recognizer */
 //    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizerAction:)];

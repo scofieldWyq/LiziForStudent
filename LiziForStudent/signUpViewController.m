@@ -11,9 +11,10 @@
 #import "mainViewController.h"
 #import "signUpCell.h"
 #import "Tools.h"
-//#import "icon.h"
+#import "LiziCurses.h"
 #import "LiziColor.h"
 #import "LiziStudent.h"
+#import "LiziClass.h"
 
 @interface signUpViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *signClassTableList;
@@ -108,6 +109,9 @@
     
     //set target.
     [self.feed_back addTarget:self action:@selector(feedBack:) forControlEvents:UIControlEventTouchUpInside];
+    
+    /* load curses */
+    [[LiziCurses getCurses] templation];
     
 //    [self prepareData];
 
@@ -298,6 +302,16 @@
     [self.detailController setNavigationLeftItem:[UIImage imageNamed:@"back"] title:@"课程" withLeftStatus:LeftItemActionBackToSignInList];
     [self.detailController setNavigationRightItem:nil withRightStatus:RightItemActionNone];
     
+    /* set property */
+    LiziClass *myclass = [[LiziCurses getCurses].curses objectAtIndex:[indexPath row]];
+    
+    self.className.text = myclass.c_name;
+    self.clasId.text = myclass.c_id;
+    self.teacherName.text = myclass.c_teacher;
+    self.schoolName.text = @"南京邮电大学";
+    self.notificationDetail.text = myclass.c_info;
+    self.notificationUpdateTime.text = @"12:01";
+    
     /* change view */
     [self showClassDetail:_signView];
     [self performSelector:@selector(hideSelectedState:) withObject:nil afterDelay:0.1];
@@ -308,10 +322,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return [[LiziCurses getCurses].curses count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    LiziClass *oneClass = [[LiziCurses getCurses].curses objectAtIndex:[indexPath row]] ;
     
     signUpCell *cell =
     [tableView dequeueReusableCellWithIdentifier:@"signUpCell" forIndexPath:indexPath];
@@ -319,6 +335,13 @@
     /* set table view cell's background */
     [cell setBackgroundColor:[LiziColor backgroundColor]];// cell's background
     [cell.subView setBackgroundColor:[UIColor whiteColor]];// cell's sub view background
+    
+    
+    /* set some property */
+    cell.className.text = oneClass.c_name;
+    cell.classId.text = oneClass.c_id;
+    cell.teacherName.text = oneClass.c_teacher;
+    cell.school.text = @"南京邮电大学";
     
     return cell;
 }

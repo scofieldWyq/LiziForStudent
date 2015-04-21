@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D15FD70C1AE684AE005B6BB5 /* LiziCurses.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */; };
+		D15FD70F1AE685EA005B6BB5 /* LiziClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD70E1AE685EA005B6BB5 /* LiziClass.m */; };
+		D15FD7121AE692E4005B6BB5 /* LiziLatest.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD7111AE692E4005B6BB5 /* LiziLatest.m */; };
 		D16493711AE3D5420052DB33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493701AE3D5420052DB33 /* Foundation.framework */; };
 		D16493731AE3D5420052DB33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493721AE3D5420052DB33 /* CoreGraphics.framework */; };
 		D16493751AE3D5420052DB33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16493741AE3D5420052DB33 /* UIKit.framework */; };
@@ -64,6 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D15FD70A1AE684AE005B6BB5 /* LiziCurses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziCurses.h; sourceTree = "<group>"; };
+		D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziCurses.m; sourceTree = "<group>"; };
+		D15FD70D1AE685EA005B6BB5 /* LiziClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziClass.h; sourceTree = "<group>"; };
+		D15FD70E1AE685EA005B6BB5 /* LiziClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziClass.m; sourceTree = "<group>"; };
+		D15FD7101AE692E4005B6BB5 /* LiziLatest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziLatest.h; sourceTree = "<group>"; };
+		D15FD7111AE692E4005B6BB5 /* LiziLatest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziLatest.m; sourceTree = "<group>"; };
 		D164936D1AE3D5420052DB33 /* LiziForStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiziForStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16493701AE3D5420052DB33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D16493721AE3D5420052DB33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -386,6 +395,12 @@
 			children = (
 				D16493EF1AE3D64C0052DB33 /* LiziStudent.h */,
 				D16493F01AE3D64C0052DB33 /* LiziStudent.m */,
+				D15FD70A1AE684AE005B6BB5 /* LiziCurses.h */,
+				D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */,
+				D15FD70D1AE685EA005B6BB5 /* LiziClass.h */,
+				D15FD70E1AE685EA005B6BB5 /* LiziClass.m */,
+				D15FD7101AE692E4005B6BB5 /* LiziLatest.h */,
+				D15FD7111AE692E4005B6BB5 /* LiziLatest.m */,
 			);
 			name = modle;
 			sourceTree = "<group>";
@@ -503,6 +518,8 @@
 				D16493D01AE3D6080052DB33 /* alarmViewController.m in Sources */,
 				D16493811AE3D5420052DB33 /* LiziAppDelegate.m in Sources */,
 				D16493D81AE3D6080052DB33 /* LiziColor.m in Sources */,
+				D15FD7121AE692E4005B6BB5 /* LiziLatest.m in Sources */,
+				D15FD70C1AE684AE005B6BB5 /* LiziCurses.m in Sources */,
 				D164937D1AE3D5420052DB33 /* main.m in Sources */,
 				D16493E31AE3D6080052DB33 /* NUPTLoginPage.m in Sources */,
 				D16493D51AE3D6080052DB33 /* latestViewController.m in Sources */,
@@ -517,6 +534,7 @@
 				D16493EB1AE3D6080052DB33 /* signUpViewController.m in Sources */,
 				D16493E51AE3D6080052DB33 /* NUPTRegisterPage.m in Sources */,
 				D16493D71AE3D6080052DB33 /* LiziCheckStatusCode.m in Sources */,
+				D15FD70F1AE685EA005B6BB5 /* LiziClass.m in Sources */,
 				D16493E91AE3D6080052DB33 /* signUpCell.m in Sources */,
 				D16493DC1AE3D6080052DB33 /* menuViewController.m in Sources */,
 				D16493E71AE3D6080052DB33 /* settingViewController.m in Sources */,
@@ -716,6 +734,7 @@
 				D164939B1AE3D5420052DB33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D164939C1AE3D5420052DB33 /* Build configuration list for PBXNativeTarget "LiziForStudentTests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +743,7 @@
 				D164939E1AE3D5420052DB33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
