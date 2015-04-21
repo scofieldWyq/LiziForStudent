@@ -135,7 +135,12 @@
  * the deleaget of alert.
  */
 {
-    if( buttonIndex == 1){
+    if( buttonIndex == 1 && [[alertView buttonTitleAtIndex:1] isEqualToString:@"Send"]){
+        [self sendingNow];
+        NSLog(@"send data");
+    }
+    
+    if( buttonIndex == 1 && [[alertView buttonTitleAtIndex:1] isEqualToString:@"是"]){
         NSLog(@"quit out");
         exit(0);
     }
@@ -148,6 +153,10 @@
  * when the send action trigger, will call this method.
  */
 {
+    [[[UIAlertView alloc] initWithTitle:@"发送" message:self.myIdea.text delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Send", nil] show];
+}
+
+- (void)sendingNow{
     /* end edit */
     [self.view endEditing:YES];
     
@@ -166,10 +175,6 @@
         [self.send_completed setAlpha:1.0];
         
     }];
-    
-    NSLog(@"send idea");
-    
-    
 }
 
 
