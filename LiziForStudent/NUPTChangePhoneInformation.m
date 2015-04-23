@@ -8,8 +8,9 @@
 
 #import "NUPTChangePhoneInformation.h"
 #import "Tools.h"
-//#import "mainViewController.h"
+#import "mainViewController.h"
 #import "LiziHttpRequired.h"
+#import "LiziStudent.h"
 
 
 @interface NUPTChangePhoneInformation() <dataReceive>
@@ -67,7 +68,7 @@
     [self.view endEditing:YES];
     
     /* check the email isn't empty */
-    if([_email.text isEqual:@""]) {
+    if([self.email.text isEqual:@""]) {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong" message:@"You have to fill it " delegate:self cancelButtonTitle:nil otherButtonTitles:@"sure", nil];
         
@@ -79,7 +80,8 @@
     /* send the code to server 
      * show the next view.
      */
-    [self sendCodeToServer];
+    if( ![self sendCodeToServer])
+        return ;
     
     [UIView animateWithDuration:0.5 animations:^{
         [_sendEmailView setHidden:YES];
@@ -89,12 +91,28 @@
     
 }
 
-- (void)sendCodeToServer
+- (BOOL)sendCodeToServer
 /* send change phone number 
  * to server.
  */
 {
     // send p< _email.text >
+    //check
+    if(![self sendCodeTemplate]){
+        [[[UIAlertView alloc] initWithTitle:@"错误" message:@"邮箱出错" delegate:self cancelButtonTitle:nil otherButtonTitles:@"好的", nil] show];
+        return NO;
+    }
+    else
+        return YES;
+    
+}
+
+- (BOOL)sendCodeTemplate{
+    
+    if( ! [self.email.text isEqualToString:@"147036scofield@gmail.com"])
+        return NO;
+    else
+        return YES;
 }
 
 - (IBAction)completeLogin:(UIButton *)sender
@@ -116,16 +134,18 @@
         return ;
     }
     
+    /* template */
+    [[LiziStudent me] templation];
+    [[LiziStudent me] setPhone:self.Phone.text];
+    
     /* send data to server */
-    [LiziHttpRequired getInstance].dataDelegate = self;
-    [[LiziHttpRequired getInstance] loginNowWithName:_Phone.text password:_changedCode.text viewController:self];
+//    [LiziHttpRequired getInstance].dataDelegate = self;
+//    [[LiziHttpRequired getInstance] loginNowWithName:_Phone.text password:_changedCode.text viewController:self];
     
     //all thing is completed.
-    
-//    [self.navigationController.navigationBar setHidden:YES];
-//    mainViewController *mainPage = [[mainViewController alloc] init];
-    
-//    [Tools pushView:mainPage from:self];
+   [self.navigationController.navigationBar setHidden:YES];
+    mainViewController *mainPage = [[mainViewController alloc] init];
+    [Tools pushView:mainPage from:self];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

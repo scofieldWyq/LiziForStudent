@@ -48,6 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /* set the photo into circle mode */
     _myPhoto.layer.cornerRadius = _myPhoto.frame.size.width / 2 ;
     _myPhoto.layer.borderColor = [UIColor whiteColor].CGColor;
     _myPhoto.layer.borderWidth = 3.0f;

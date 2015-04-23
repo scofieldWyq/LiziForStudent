@@ -10,7 +10,7 @@
 
 @implementation LiziColor
 + (UIColor *)statusBarColor {
-    return [UIColor redColor];
+    return [self initWithRed:0xff green:0xbb blue:0x00];
 }
 
 + (UIColor *)backgroundColor {

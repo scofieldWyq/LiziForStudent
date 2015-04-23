@@ -13,6 +13,7 @@
 #import "mainViewController.h"
 #import "LiziHttpRequired.h"
 #import "LiziCheckStatusCode.h"
+#import "LiziStudent.h"
 
 //#import "NUPTStudent.h"
 
@@ -114,11 +115,20 @@
         /*
          * test prints phone number, code
          */
- 
+    
+    /* test mode */
+    if( [self.phone.text isEqualToString:@"sd"] || [self.code.text isEqualToString:@"sd"]) {
+        [self logCompleteTemplate];
+        
+    }
+    else{
+        
+        [[[UIAlertView alloc] initWithTitle:@"错误" message:@"账号或者密码错误" delegate:self cancelButtonTitle:nil otherButtonTitles:@"好", nil] show];
+    }
     
     /* get the student information */
-    [LiziHttpRequired getInstance].dataDelegate = self;
-    [[LiziHttpRequired getInstance] loginNowWithName:_phone.text password:_code.text viewController:self];
+//    [LiziHttpRequired getInstance].dataDelegate = self;
+//    [[LiziHttpRequired getInstance] loginNowWithName:_phone.text password:_code.text viewController:self];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -159,6 +169,17 @@
     }
     
     return ;
+}
+
+- (void)logCompleteTemplate
+/*
+ * just a template.
+ */
+{
+    [[LiziStudent me] templation];
+    mainViewController *mainPage = [[mainViewController alloc] init];
+    
+    [Tools pushView:mainPage from:self];
 }
 
 @end

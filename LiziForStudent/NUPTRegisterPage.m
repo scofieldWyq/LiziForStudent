@@ -8,10 +8,10 @@
 
 #import "NUPTRegisterPage.h"
 #import "Tools.h"
+#import "LiziStudent.h"
 #import "LiziColor.h"
 #import "LiziCheckStatusCode.h"
-
-//#import "mainViewController.h"
+#import "mainViewController.h"
 
 @implementation NUPTRegisterPage
 
@@ -95,21 +95,39 @@
         return ;
     }
     
-    /* register now */
-    [[LiziHttpRequired getInstance] registerNowWithPhone:_phone.text code:_messageCode.text name:_name.text email:_email.text device:@".iphone." viewController:self ];
+//    /* register now */
+//    [[LiziHttpRequired getInstance] registerNowWithPhone:_phone.text code:_messageCode.text name:_name.text email:_email.text device:@".iphone." viewController:self ];
+//    
+//    /* check if register success or not */
+//    if( [LiziCheckStatusCode checking:[LiziHttpRequired getInstance].getData[@"status"]]){
+//    /* login now */
+//        
+//        [[LiziHttpRequired getInstance] loginNowWithName:_phone.text password:_messageCode.text  viewController:self];
     
-    /* check if register success or not */
-    if( [LiziCheckStatusCode checking:[LiziHttpRequired getInstance].getData[@"status"]]){
-    /* login now */
+        [self settingAlltheData];
         
-        [[LiziHttpRequired getInstance] loginNowWithName:_phone.text password:_messageCode.text  viewController:self];
+            [self.navigationController.navigationBar setHidden:YES];
+    
+            mainViewController *mainPage = [[mainViewController alloc] init];
         
-        //    [self.navigationController.navigationBar setHidden:YES];
-        
-        //    mainViewController *mainPage = [[mainViewController alloc] init];
-        
-        //    [Tools pushView:mainPage from:self];
-    }
+            [Tools pushView:mainPage from:self];
+    //}
+}
+
+- (void)settingAlltheData
+/*
+ * setting all the student data.
+ */
+{
+    LiziStudent *student = [LiziStudent me];
+    [student templation];
+    
+    [student setName:self.name.text];
+    [student setPhone:self.phone.text];
+    [student setSchool:self.school.text];
+    [student setNumber:self.number.text];
+    [student setEmail:self.email.text];
+    //
 }
 
 -(IBAction)nextStep:(UIButton *)sender

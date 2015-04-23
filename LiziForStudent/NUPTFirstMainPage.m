@@ -53,9 +53,10 @@
     NUPTLoginPage *logPage = [[NUPTLoginPage alloc] init];
     
     /* custome BarButtonItem */
+    
     UIBarButtonItem *backItem =[[UIBarButtonItem alloc] init];
-    backItem.title = [sender currentTitle]; //set title.
-
+    [backItem setTitle:[sender currentTitle]];
+    
     self.navigationItem.backBarButtonItem = backItem;
     
     /* push view , and jump to login page view. */

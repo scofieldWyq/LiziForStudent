@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, SexSelected) {
 @property (weak, nonatomic) IBOutlet UIButton *sex_Girl;
 @property (weak, nonatomic) IBOutlet UIButton *sex_Boy;
 @property (weak, nonatomic) IBOutlet UIButton *sex_none;
+
 @property (weak, nonatomic) IBOutlet UIImageView *myPhoto;
 
 @property (weak, nonatomic) IBOutlet UIView *myInformationView;
@@ -52,14 +53,35 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     /* prepare for something */
     [self prepareMyInformation];
     
+    /* set photo default */
+    self.myPhoto.layer.cornerRadius = _myPhoto.frame.size.width / 2 ;
+    self.myPhoto.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.myPhoto.layer.borderWidth = 3.0f;
+    self.myPhoto.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    
+    self.myPhoto.clipsToBounds = YES;
+    
     /* set the defualt sex */
-    _photoCenterX = _myPhoto.center.x;
-    _sexCenterX = _sex_Boy.center.x;
+    self.photoCenterX = _myPhoto.center.x;
+    self.sexCenterX = _sex_Boy.center.x;
+    
+    /* set the photo can get an action */
+    [self.myPhoto setUserInteractionEnabled:YES];
+    UITapGestureRecognizer *singalTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeMyPhoto:)];
+    [self.myPhoto addGestureRecognizer:singalTap];
+    [self.myPhoto setUserInteractionEnabled:NO];
     
     /* set some action */
-    [_sex_Boy addTarget:self action:@selector(boy:) forControlEvents:UIControlEventTouchUpInside];
-    [_sex_Girl addTarget:self action:@selector(girl:) forControlEvents:UIControlEventTouchUpInside];
-    [_sex_none addTarget:self action:@selector(none:) forControlEvents:UIControlEventTouchUpInside];
+    [self.sex_Boy addTarget:self action:@selector(boy:) forControlEvents:UIControlEventTouchUpInside];
+    [self.sex_Girl addTarget:self action:@selector(girl:) forControlEvents:UIControlEventTouchUpInside];
+    [self.sex_none addTarget:self action:@selector(none:) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)changeMyPhoto:(UIButton *)sender
+/* just change the photo */
+{
+    NSLog(@"change my photo ");
     
 }
 
@@ -108,6 +130,12 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     [_school setText:student.school];
     [_myId setText:student.number];
     [_email setText:student.email];
+    
+    /* set the change placeholder */
+    [self.editName setPlaceholder:student.name];
+    [self.editSchool setPlaceholder:student.school];
+    [self.editMyId setPlaceholder:student.number];
+    [self.editEmail setPlaceholder:student.email];
     
 }
 
@@ -173,6 +201,7 @@ typedef NS_ENUM(NSInteger, SexSelected) {
 
 - (void)prepareMyInformation{
     
+    /* prepare button */
     [_sex_Boy setEnabled:NO];
     [_sex_Girl setEnabled:NO];
     [_sex_none setEnabled:NO];
@@ -180,6 +209,7 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     [_sex_Boy setHidden:NO];
     [_sex_Girl setHidden:YES];
     [_sex_none setHidden:YES];
+    
     
     [Tools prepareCustomeView:_myInformationView forAttantion:NO];
     
@@ -248,6 +278,7 @@ typedef NS_ENUM(NSInteger, SexSelected) {
         [_sex_Boy setBackgroundImage:[UIImage imageNamed:@"boy_pressed"] forState:UIControlStateHighlighted];
         [_sex_Girl setBackgroundImage:[UIImage imageNamed:@"girl_pressed"] forState:UIControlStateHighlighted];
         [_sex_none setBackgroundImage:[UIImage imageNamed:@"secret_pressed"] forState:UIControlStateHighlighted];
+        [self.myPhoto setUserInteractionEnabled:YES];
         
     }];
     
@@ -283,6 +314,8 @@ typedef NS_ENUM(NSInteger, SexSelected) {
     [_sex_Boy setEnabled:NO];
     [_sex_Girl setEnabled:NO];
     [_sex_none setEnabled:NO];
+    
+    [self.myPhoto setUserInteractionEnabled:NO];
 }
 
 - (void)resizedSexAndPhotoWithSex:(SexSelected )sex {

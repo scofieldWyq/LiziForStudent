@@ -28,8 +28,11 @@ typedef NS_ENUM(NSInteger, ProcessState) {
 };
 
 @protocol dataReceive <NSObject>
+
+@optional
 -(void)loginCompleted;
 -(void)registerCompleted;
+
 @end
 @interface LiziHttpRequired : NSObject
 @property (nonatomic, strong) NSDictionary *getData;

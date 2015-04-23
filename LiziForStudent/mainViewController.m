@@ -14,9 +14,7 @@
 #import "alarmViewController.h"
 #import "myInfoViewController.h"
 #import "LiziStudent.h"
-//#import "LiziMyClass.h"
-//#import "NUPTHttpRequest.h"
-
+#import "LiziColor.h"
 
 @interface mainViewController () <UIGestureRecognizerDelegate>
 //navigate bar property
@@ -140,39 +138,6 @@
             break;
     }
 }
-//    switch (_rightMode) {
-//        case rightBarModeSendMyIdea:{
-//            [self setNavigationWithLeftBIcon:[icon detailImage] title:@"设置" rightBtIcon:nil];
-//            
-//            [ (settingViewController *) _currentContentVController sendMyIdea];
-//            _rightMode = rightBarModeNULL;
-//        }
-//            break;
-//        case rightBarModeEditMyInformation:{
-//            [ (myInfoViewController *) _currentContentVController editMode];
-//            
-//            [self setNavigationWithLeftBIcon:[icon backImage] title:@"资料编辑" rightBtIcon:[icon doneImage]];
-//            
-//            _rightMode = rightBarModeOk;
-//        }
-//            break;
-//        case rightBarModeOk: {
-//            [self setNavigationWithLeftBIcon:[icon backImage] title:@"个人中心" rightBtIcon:[icon editImage]];
-//            
-//            [ (myInfoViewController *) _currentContentVController setProperty];
-//            [ (myInfoViewController *) _currentContentVController noEditMode];
-//            
-//            _rightMode = rightBarModeEditMyInformation;
-//        }
-//            break;
-//        case rightBarModeUPdate:{
-//            //
-//            NSLog(@"update");
-//        }
-//            break;
-//        default:
-//            break;
-//    }
 
 - (IBAction)leftBarWithNavigate:(id)sender {
     
@@ -190,8 +155,15 @@
         }
             break;
         case LeftItemActionPersonCenter: {
+            
             //back to person center from edit mode.
-            NSLog(@"person center ");
+            /* cancel edit mode */
+            [ (myInfoViewController *) _currentContentVController noEditMode];
+            
+            /* back to person center */
+            [self setNavigationLeftItem:[UIImage imageNamed:@"back"] title:@"个人中心" withLeftStatus:LeftItemActionBackToMain];
+            [self setNavigationRightItem:[UIImage imageNamed:@"edit"] withRightStatus:RightItemActionEditMyInformation];
+            
         }
             break;
         case LeftItemActionShowMenu: {
@@ -239,59 +211,6 @@
             break;
     }
 }
-//    switch (_rightMode) {
-//        case rightBarModeSendMyIdea:{
-//            
-//            [self setNavigationWithLeftBIcon:[icon detailImage] title:@"设置" rightBtIcon:nil];
-//            
-//            [ (settingViewController *)_currentContentVController back];
-//            _rightMode = rightBarModeNULL;
-//        }
-//            break;
-//        case rightBarModeEditMyInformation: {
-//            if([self removeViewWithCode:NUPTMenuCodeLatest])
-//                [self latestContent];
-//            _rightMode = rightBarModeNULL;
-//        }
-//            break;
-//        case rightBarModeOk: {
-//            [self setNavigationWithLeftBIcon:[icon backImage] title:@"个人中心" rightBtIcon:[icon editImage]];
-//            
-//            [(myInfoViewController *)_currentContentVController noEditMode];
-//            
-//            _rightMode = rightBarModeEditMyInformation;
-//        }
-//            break;
-//            
-//        case rightBarModeClassDetailBack: {
-//            
-//            [self setNavigationWithLeftBIcon:[icon detailImage] title:@"课程" rightBtIcon:[icon addImage]];
-//            
-//            [ (signUpViewController *)_currentContentVController classBack];
-//            
-//            _rightMode = rightBarModeClassAdd;
-//        }
-//            break;
-//        case rightBarModeSignInNow:{
-//            
-//            [self setNavigationWithLeftBIcon:[icon backImage] title:@"课程" rightBtIcon:nil];
-//            
-//            [ (signUpViewController *) _currentContentVController signBack];
-//            
-//            _rightMode = rightBarModeClassDetailBack;
-//            
-//        }
-//            break;
-//        case rightBarModeNULL: {
-//            
-//            [self showMenu];
-//        }
-//
-//        default:
-//            [self showMenu];
-//            break;
-//    }
-
 
 - (void)prepareForSomeData {
     
@@ -341,7 +260,10 @@
     /* hide the navigationBar */
     [self.navigationController.navigationBar setHidden:YES];
     
+    /* set the status bar color */
+    [self.statusBarP setBackgroundColor:[LiziColor statusBarColor]];
     
+    /* prepare for data */
     [self prepareForSomeData];
     [_navigationRightButton setHidden:YES];
     
@@ -352,9 +274,6 @@
     [self.view addSubview:_menuView];
     
 //     [self setNavigationWithMenuState:_menuCode];
-    
-    /* load student info */
-    [[LiziStudent me] templation];// move it out after link to server.
     
     /* setting the gesture recognizer */
 //    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizerAction:)];

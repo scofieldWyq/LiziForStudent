@@ -31,7 +31,7 @@
                     <rect key="frame" x="10" y="20" width="300" height="328"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo_default" translatesAutoresizingMaskIntoConstraints="NO" id="jwP-A2-ynO">
+                        <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jwP-A2-ynO">
                             <rect key="frame" x="120" y="44" width="60" height="60"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
@@ -135,9 +135,9 @@
         <image name="boy_nor" width="28" height="28"/>
         <image name="email" width="33" height="42"/>
         <image name="girl_nor" width="42" height="42"/>
+        <image name="logo" width="324" height="254"/>
         <image name="name" width="33" height="42"/>
         <image name="number" width="33" height="42"/>
-        <image name="photo_default" width="117" height="117"/>
         <image name="school" width="33" height="42"/>
         <image name="ssecret_nor" width="42" height="42"/>
     </resources>
