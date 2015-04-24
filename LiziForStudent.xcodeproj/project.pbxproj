@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12BC7FE1AE9CE5A009C93DF /* LiziMyNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC7FD1AE9CE5A009C93DF /* LiziMyNotification.m */; };
+		D12BC8011AE9CEA9009C93DF /* LiziMyNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC8001AE9CEA9009C93DF /* LiziMyNotifications.m */; };
+		D12BC8041AE9D339009C93DF /* LiziAlarmAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC8031AE9D339009C93DF /* LiziAlarmAdd.m */; };
+		D12BC8081AEA068F009C93DF /* LiziNotificationDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */; };
+		D12BC8091AEA068F009C93DF /* LiziNotificationDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */; };
 		D15FD70C1AE684AE005B6BB5 /* LiziCurses.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */; };
 		D15FD70F1AE685EA005B6BB5 /* LiziClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD70E1AE685EA005B6BB5 /* LiziClass.m */; };
 		D15FD7121AE692E4005B6BB5 /* LiziLatest.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD7111AE692E4005B6BB5 /* LiziLatest.m */; };
@@ -54,6 +59,8 @@
 		D16493ED1AE3D6080052DB33 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493CD1AE3D6080052DB33 /* Tools.m */; };
 		D16493EE1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */; };
 		D16493F11AE3D64C0052DB33 /* LiziStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = D16493F01AE3D64C0052DB33 /* LiziStudent.m */; };
+		D193F3F01AE94C2E0072DB50 /* LiziClassLatest.m in Sources */ = {isa = PBXBuildFile; fileRef = D193F3EF1AE94C2E0072DB50 /* LiziClassLatest.m */; };
+		D193F3F31AE959600072DB50 /* LiziLatestDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D193F3F21AE959600072DB50 /* LiziLatestDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12BC7FC1AE9CE5A009C93DF /* LiziMyNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziMyNotification.h; sourceTree = "<group>"; };
+		D12BC7FD1AE9CE5A009C93DF /* LiziMyNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziMyNotification.m; sourceTree = "<group>"; };
+		D12BC7FF1AE9CEA9009C93DF /* LiziMyNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziMyNotifications.h; sourceTree = "<group>"; };
+		D12BC8001AE9CEA9009C93DF /* LiziMyNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziMyNotifications.m; sourceTree = "<group>"; };
+		D12BC8021AE9D339009C93DF /* LiziAlarmAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziAlarmAdd.h; sourceTree = "<group>"; };
+		D12BC8031AE9D339009C93DF /* LiziAlarmAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziAlarmAdd.m; sourceTree = "<group>"; };
+		D12BC8051AEA068F009C93DF /* LiziNotificationDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziNotificationDetail.h; sourceTree = "<group>"; };
+		D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziNotificationDetail.m; sourceTree = "<group>"; };
+		D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiziNotificationDetail.xib; sourceTree = "<group>"; };
 		D15FD70A1AE684AE005B6BB5 /* LiziCurses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziCurses.h; sourceTree = "<group>"; };
 		D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziCurses.m; sourceTree = "<group>"; };
 		D15FD70D1AE685EA005B6BB5 /* LiziClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziClass.h; sourceTree = "<group>"; };
@@ -140,6 +156,10 @@
 		D16493CF1AE3D6080052DB33 /* UIViewController+mainViewControllerInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+mainViewControllerInstance.m"; sourceTree = "<group>"; };
 		D16493EF1AE3D64C0052DB33 /* LiziStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziStudent.h; sourceTree = "<group>"; };
 		D16493F01AE3D64C0052DB33 /* LiziStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziStudent.m; sourceTree = "<group>"; };
+		D193F3EE1AE94C2E0072DB50 /* LiziClassLatest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziClassLatest.h; sourceTree = "<group>"; };
+		D193F3EF1AE94C2E0072DB50 /* LiziClassLatest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziClassLatest.m; sourceTree = "<group>"; };
+		D193F3F11AE959600072DB50 /* LiziLatestDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziLatestDetail.h; sourceTree = "<group>"; };
+		D193F3F21AE959600072DB50 /* LiziLatestDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziLatestDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +234,13 @@
 				D16493F21AE3DB0F0052DB33 /* Tools */,
 				D164937F1AE3D5420052DB33 /* LiziAppDelegate.h */,
 				D16493801AE3D5420052DB33 /* LiziAppDelegate.m */,
+				D193F3F11AE959600072DB50 /* LiziLatestDetail.h */,
+				D193F3F21AE959600072DB50 /* LiziLatestDetail.m */,
+				D12BC8021AE9D339009C93DF /* LiziAlarmAdd.h */,
+				D12BC8031AE9D339009C93DF /* LiziAlarmAdd.m */,
+				D12BC8051AEA068F009C93DF /* LiziNotificationDetail.h */,
+				D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */,
+				D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */,
 				D16493821AE3D5420052DB33 /* Images.xcassets */,
 				D16493771AE3D5420052DB33 /* Supporting Files */,
 			);
@@ -401,6 +428,12 @@
 				D15FD70E1AE685EA005B6BB5 /* LiziClass.m */,
 				D15FD7101AE692E4005B6BB5 /* LiziLatest.h */,
 				D15FD7111AE692E4005B6BB5 /* LiziLatest.m */,
+				D193F3EE1AE94C2E0072DB50 /* LiziClassLatest.h */,
+				D193F3EF1AE94C2E0072DB50 /* LiziClassLatest.m */,
+				D12BC7FC1AE9CE5A009C93DF /* LiziMyNotification.h */,
+				D12BC7FD1AE9CE5A009C93DF /* LiziMyNotification.m */,
+				D12BC7FF1AE9CEA9009C93DF /* LiziMyNotifications.h */,
+				D12BC8001AE9CEA9009C93DF /* LiziMyNotifications.m */,
 			);
 			name = modle;
 			sourceTree = "<group>";
@@ -494,6 +527,7 @@
 				D16493D21AE3D6080052DB33 /* changeInforViews.xib in Resources */,
 				D16493E61AE3D6080052DB33 /* NUPTRegisterPage.xib in Resources */,
 				D16493E81AE3D6080052DB33 /* settingViewController.xib in Resources */,
+				D12BC8091AEA068F009C93DF /* LiziNotificationDetail.xib in Resources */,
 				D16493DF1AE3D6080052DB33 /* myInfoViewController.xib in Resources */,
 				D16493EA1AE3D6080052DB33 /* signUpCell.xib in Resources */,
 			);
@@ -514,12 +548,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12BC7FE1AE9CE5A009C93DF /* LiziMyNotification.m in Sources */,
 				D16493D31AE3D6080052DB33 /* latestCell.m in Sources */,
 				D16493D01AE3D6080052DB33 /* alarmViewController.m in Sources */,
 				D16493811AE3D5420052DB33 /* LiziAppDelegate.m in Sources */,
 				D16493D81AE3D6080052DB33 /* LiziColor.m in Sources */,
+				D12BC8081AEA068F009C93DF /* LiziNotificationDetail.m in Sources */,
 				D15FD7121AE692E4005B6BB5 /* LiziLatest.m in Sources */,
 				D15FD70C1AE684AE005B6BB5 /* LiziCurses.m in Sources */,
+				D12BC8041AE9D339009C93DF /* LiziAlarmAdd.m in Sources */,
 				D164937D1AE3D5420052DB33 /* main.m in Sources */,
 				D16493E31AE3D6080052DB33 /* NUPTLoginPage.m in Sources */,
 				D16493D51AE3D6080052DB33 /* latestViewController.m in Sources */,
@@ -529,11 +566,14 @@
 				D16493ED1AE3D6080052DB33 /* Tools.m in Sources */,
 				D16493E01AE3D6080052DB33 /* NUPTChangePhoneInformation.m in Sources */,
 				D16493E11AE3D6080052DB33 /* NUPTFirstMainPage.m in Sources */,
+				D12BC8011AE9CEA9009C93DF /* LiziMyNotifications.m in Sources */,
 				D16493DE1AE3D6080052DB33 /* myInfoViewController.m in Sources */,
 				D16493F11AE3D64C0052DB33 /* LiziStudent.m in Sources */,
 				D16493EB1AE3D6080052DB33 /* signUpViewController.m in Sources */,
 				D16493E51AE3D6080052DB33 /* NUPTRegisterPage.m in Sources */,
 				D16493D71AE3D6080052DB33 /* LiziCheckStatusCode.m in Sources */,
+				D193F3F01AE94C2E0072DB50 /* LiziClassLatest.m in Sources */,
+				D193F3F31AE959600072DB50 /* LiziLatestDetail.m in Sources */,
 				D15FD70F1AE685EA005B6BB5 /* LiziClass.m in Sources */,
 				D16493E91AE3D6080052DB33 /* signUpCell.m in Sources */,
 				D16493DC1AE3D6080052DB33 /* menuViewController.m in Sources */,

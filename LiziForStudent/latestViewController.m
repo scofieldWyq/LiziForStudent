@@ -8,6 +8,10 @@
 
 #import "latestViewController.h"
 #import "latestCell.h"
+#import "LiziLatest.h"
+#import "LiziColor.h"
+#import "LiziClassLatest.h"
+#import "LiziLatestDetail.h"
 
 @interface latestViewController() <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *latestTableList;
@@ -23,7 +27,7 @@
     
     /* add table view to this view */
     [self.view addSubview:_latestTableList];
-    [_latestTableList setBackgroundColor:[UIColor clearColor]];
+    [_latestTableList setBackgroundColor:[LiziColor backgroundColor]];
     
     [_latestTableList setDataSource:self];
     [_latestTableList setDelegate:self];
@@ -51,6 +55,9 @@
     [self.feed_back addTarget:self action:@selector(feedBack:) forControlEvents:UIControlEventTouchUpInside];
     
     
+    /* load latest */
+    [[LiziLatest Latest] latestTemplate];
+    
 }
 
 - (void)feedBack:(UIButton *)sender
@@ -60,6 +67,7 @@
 {
     
     /* scroll to first row */
+    
     [self.latestTableList scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
     
     /* hide the feedBack button */
@@ -72,7 +80,7 @@
 
 /* return the number of cells in table view. */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [[LiziLatest Latest].latests count];
 }
 
 /* drawing cell */
@@ -80,6 +88,13 @@
     
     latestCell *cell =
     [tableView dequeueReusableCellWithIdentifier:@"latestCell" forIndexPath:indexPath];
+    
+    LiziClassLatest *oneOfLatest = [[LiziLatest Latest].latests objectAtIndex:[indexPath row]];
+    
+    cell.className.text = oneOfLatest.c_Name;
+    cell.title.text = oneOfLatest.c_title;
+    cell.upTime.text = oneOfLatest.c_up_time;
+    cell.number.text = oneOfLatest.c_number_talk;
     
     return cell;
 }
@@ -92,7 +107,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     /* do something */
-    //...
+    LiziLatestDetail *lld = [[LiziLatestDetail alloc] init];
+    [lld.view setFrame:self.view.frame];
+    
+    [self addChildViewController:lld];
+    [self.view addSubview:lld.view];
+    [lld didMoveToParentViewController:self];
+    [lld showingNowWithData:nil];
     
     /* deselected */
     [self performSelector:@selector(hideSelectedState:) withObject:nil afterDelay:0.1];

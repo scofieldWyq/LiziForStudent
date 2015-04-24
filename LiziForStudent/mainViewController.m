@@ -15,6 +15,7 @@
 #import "myInfoViewController.h"
 #import "LiziStudent.h"
 #import "LiziColor.h"
+#import "LiziAlarmAdd.h"
 
 @interface mainViewController () <UIGestureRecognizerDelegate>
 //navigate bar property
@@ -133,6 +134,27 @@
             NSLog(@"send data from my idea view");
         }
         break;
+            
+        case RightItemActionNotificationAdd: {
+            /* add notification */
+            LiziAlarmAdd *alarmAdd = [[LiziAlarmAdd alloc] init];
+            [alarmAdd.view setFrame:self.view.frame];
+            
+            /* add to parent */
+            [self addChildViewController:alarmAdd];
+            [self.view addSubview:alarmAdd.view];
+            [alarmAdd didMoveToParentViewController:self];
+            [alarmAdd.view setAlpha:0];
+            
+            /* animation */
+            [UIView animateWithDuration:0.5 animations:^{
+                [alarmAdd.view setAlpha:1];
+            } completion:^(BOOL finished) {
+                [alarmAdd setDataDelegate:(alarmViewController *) _currentContentVController];
+            }];
+            
+            NSLog(@"add alarm");
+        }
             
         default:
             break;
@@ -384,8 +406,8 @@
         case MenuStatusNotification: {
 
             /* change the navigation bar */
-            [self setNavigationLeftItem:[UIImage imageNamed:@"menu"] title:@"设置" withLeftStatus:LeftItemActionNone];
-            [self setNavigationRightItem:nil withRightStatus:RightItemActionNone];
+            [self setNavigationLeftItem:[UIImage imageNamed:@"menu"] title:@"提醒" withLeftStatus:LeftItemActionNone];
+            [self setNavigationRightItem:[UIImage imageNamed:@"creat(add)"] withRightStatus:RightItemActionNotificationAdd];
             
             /* hide menu */
             [self hideMenu];

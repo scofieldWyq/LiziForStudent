@@ -298,8 +298,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    [self.detailController setNavigationWithLeftBIcon:[icon backImage] title:@"课程" rightBtIcon:nil withStateCode:rightBarModeClassDetailBack];
-    
     /* set navigation property */
     [self.detailController setNavigationLeftItem:[UIImage imageNamed:@"back"] title:@"课程" withLeftStatus:LeftItemActionBackToSignInList];
     [self.detailController setNavigationRightItem:nil withRightStatus:RightItemActionNone];

@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface LiziLatest : NSObject
+@property (nonatomic, strong) NSMutableArray *latests;
+
++ (LiziLatest *)Latest;
+
+- (void)latestTemplate;
 
 @end

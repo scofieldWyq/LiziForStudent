@@ -7,11 +7,60 @@
 //
 
 #import "alarmViewController.h"
-@interface alarmViewController()
+#import "LiziMyNotifications.h"
+#import "LiziMyNotification.h"
+#import "LiziAlarmAdd.h"
+
+@interface alarmViewController()<UITableViewDataSource, UITableViewDelegate, updateView>
+
 @property (weak, nonatomic) IBOutlet UITableView *alarmTableList;
 @end
 @implementation alarmViewController
+
+- (void)viewDidLoad{
+    
+    /* prepare for the table view */
+    [self.alarmTableList setDelegate:self];
+    [self.alarmTableList setDataSource:self];
+    [self.alarmTableList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"tableCell"];
+    
+}
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NSLog(@"alarm");
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[LiziMyNotifications Noti].myNotifications count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableCell"];
+    
+    LiziMyNotification *my_N = [LiziMyNotifications Noti].myNotifications[[indexPath row]];
+    
+    cell.textLabel.text = [my_N title];
+    cell.detailTextLabel.text = [[my_N n_time] descriptionWithLocale:[NSLocale currentLocale]];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    /* deselected */
+    [self performSelector:@selector(hideSelectedState:) withObject:nil afterDelay:0.1];
+    
+}
+
+- (void)hideSelectedState:(id)sender {
+    [self.alarmTableList deselectRowAtIndexPath:[self.alarmTableList indexPathForSelectedRow] animated:YES];
+}
+
+- (void)updateTableViewData {
+    [self.alarmTableList reloadData];
 }
 @end

@@ -73,7 +73,8 @@ typedef NS_ENUM(NSInteger, RightItemAction){
     RightItemActionSendMyIdea = 5,
     RightItemActionRefreshCode = 6,
     RightItemActionRefreshClassmate = 7,
-    RightItemActionNone = 8
+    RightItemActionNone = 8,
+    RightItemActionNotificationAdd = 9
     
 };
 
