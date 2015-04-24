@@ -67,16 +67,26 @@
     
     LiziMyNotification *n = [[LiziMyNotification alloc] init];
     
+    /* check the text is complete or not */
     if( [self.notificationDetailAdd.notifications.text isEqualToString:@""] || [self.notificationDetailAdd.myTitle.text isEqualToString:@""]){
         [[[UIAlertView alloc] initWithTitle:@"错误" message:@"信息不完整" delegate:self cancelButtonTitle:nil otherButtonTitles:@"好", nil] show];
         return ;
     }
     
+    /* set some property  */
     n.title = self.notificationDetailAdd.myTitle.text;
     n.content = self.notificationDetailAdd.notifications.text;
     n.n_time = self.notificationDetailAdd.N_time.date;
     
     [[LiziMyNotifications Noti].myNotifications addObject:n];
+    
+    /* add to notification */
+    UILocalNotification *no = [[UILocalNotification alloc] init];
+    no.alertAction = n.title;
+    no.fireDate = n.n_time;
+    no.alertBody = @"notice";
+    [[UIApplication sharedApplication] scheduleLocalNotification:no];
+    
     
     [self.del updateTableViewData];
     [self hidingNow:nil];

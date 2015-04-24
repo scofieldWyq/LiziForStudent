@@ -34,6 +34,10 @@
     return YES;
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    NSLog(@"notification deal");
+}
+
 - (void)setNavigationProperty:(UINavigationController *)nvc{
     
     /* in first page, hide the navigation bar.

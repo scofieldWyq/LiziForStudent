@@ -40,7 +40,15 @@
     LiziMyNotification *my_N = [LiziMyNotifications Noti].myNotifications[[indexPath row]];
     
     cell.textLabel.text = [my_N title];
-    cell.detailTextLabel.text = [[my_N n_time] descriptionWithLocale:[NSLocale currentLocale]];
+    
+    /* set the notification time */
+    NSString *time = [[my_N n_time] descriptionWithLocale:[NSLocale currentLocale]];
+    NSString *year = [time componentsSeparatedByString:@" "][3];
+    NSString *day = [time componentsSeparatedByString:@" "][2];
+    NSString *t = [time componentsSeparatedByString:@" "][5];
+    
+    NSString *timeF = [NSString stringWithFormat:@"%@-%@%@", year, day, t];
+    cell.detailTextLabel.text = timeF;
     
     return cell;
 }

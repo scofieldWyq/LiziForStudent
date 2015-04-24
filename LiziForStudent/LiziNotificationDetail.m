@@ -26,6 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    /* set the time not at the past */
+    [self.N_time setMinimumDate:[NSDate dateWithTimeIntervalSinceNow:60]];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
