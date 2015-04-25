@@ -12,6 +12,7 @@
 		D12BC8041AE9D339009C93DF /* LiziAlarmAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC8031AE9D339009C93DF /* LiziAlarmAdd.m */; };
 		D12BC8081AEA068F009C93DF /* LiziNotificationDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */; };
 		D12BC8091AEA068F009C93DF /* LiziNotificationDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */; };
+		D12BC80C1AEB920C009C93DF /* LiziHoldingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D12BC80B1AEB920C009C93DF /* LiziHoldingClass.m */; };
 		D15FD70C1AE684AE005B6BB5 /* LiziCurses.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */; };
 		D15FD70F1AE685EA005B6BB5 /* LiziClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD70E1AE685EA005B6BB5 /* LiziClass.m */; };
 		D15FD7121AE692E4005B6BB5 /* LiziLatest.m in Sources */ = {isa = PBXBuildFile; fileRef = D15FD7111AE692E4005B6BB5 /* LiziLatest.m */; };
@@ -83,6 +84,8 @@
 		D12BC8051AEA068F009C93DF /* LiziNotificationDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziNotificationDetail.h; sourceTree = "<group>"; };
 		D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziNotificationDetail.m; sourceTree = "<group>"; };
 		D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiziNotificationDetail.xib; sourceTree = "<group>"; };
+		D12BC80A1AEB920C009C93DF /* LiziHoldingClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziHoldingClass.h; sourceTree = "<group>"; };
+		D12BC80B1AEB920C009C93DF /* LiziHoldingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziHoldingClass.m; sourceTree = "<group>"; };
 		D15FD70A1AE684AE005B6BB5 /* LiziCurses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziCurses.h; sourceTree = "<group>"; };
 		D15FD70B1AE684AE005B6BB5 /* LiziCurses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiziCurses.m; sourceTree = "<group>"; };
 		D15FD70D1AE685EA005B6BB5 /* LiziClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiziClass.h; sourceTree = "<group>"; };
@@ -434,6 +437,8 @@
 				D12BC7FD1AE9CE5A009C93DF /* LiziMyNotification.m */,
 				D12BC7FF1AE9CEA9009C93DF /* LiziMyNotifications.h */,
 				D12BC8001AE9CEA9009C93DF /* LiziMyNotifications.m */,
+				D12BC80A1AEB920C009C93DF /* LiziHoldingClass.h */,
+				D12BC80B1AEB920C009C93DF /* LiziHoldingClass.m */,
 			);
 			name = modle;
 			sourceTree = "<group>";
@@ -568,6 +573,7 @@
 				D16493E11AE3D6080052DB33 /* NUPTFirstMainPage.m in Sources */,
 				D12BC8011AE9CEA9009C93DF /* LiziMyNotifications.m in Sources */,
 				D16493DE1AE3D6080052DB33 /* myInfoViewController.m in Sources */,
+				D12BC80C1AEB920C009C93DF /* LiziHoldingClass.m in Sources */,
 				D16493F11AE3D64C0052DB33 /* LiziStudent.m in Sources */,
 				D16493EB1AE3D6080052DB33 /* signUpViewController.m in Sources */,
 				D16493E51AE3D6080052DB33 /* NUPTRegisterPage.m in Sources */,

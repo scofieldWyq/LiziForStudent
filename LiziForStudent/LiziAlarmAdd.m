@@ -10,6 +10,7 @@
 #import "LiziNotificationDetail.h"
 #import "LiziMyNotifications.h"
 #import "LiziMyNotification.h"
+#import "LiziHoldingClass.h"
 
 @implementation LiziAlarmAdd
 
@@ -32,6 +33,7 @@
     nvc.view.center = CGPointMake(self.view.center.x, self.view.center.y);
     
     LiziNotificationDetail *vc = [[LiziNotificationDetail alloc] init];
+    
     [vc.view setBackgroundColor:[UIColor whiteColor]];
   
     /* set left & right item */
@@ -63,12 +65,19 @@
     self.del = dele;
 }
 
-- (void)addItem:(UIButton *)sender {
+- (void)addItem:(UIButton *)sender
+/*
+ * add the notification to local.
+ */
+{
     
+    /* create a notification */
     LiziMyNotification *n = [[LiziMyNotification alloc] init];
+    int number;
     
     /* check the text is complete or not */
     if( [self.notificationDetailAdd.notifications.text isEqualToString:@""] || [self.notificationDetailAdd.myTitle.text isEqualToString:@""]){
+        
         [[[UIAlertView alloc] initWithTitle:@"错误" message:@"信息不完整" delegate:self cancelButtonTitle:nil otherButtonTitles:@"好", nil] show];
         return ;
     }
@@ -78,17 +87,31 @@
     n.content = self.notificationDetailAdd.notifications.text;
     n.n_time = self.notificationDetailAdd.N_time.date;
     
+    /* add notification to notifications */
+    number = [[LiziMyNotifications Noti].myNotifications count];//get the index;
     [[LiziMyNotifications Noti].myNotifications addObject:n];
     
     /* add to notification */
     UILocalNotification *no = [[UILocalNotification alloc] init];
     no.alertAction = n.title;
     no.fireDate = n.n_time;
-    no.alertBody = @"notice";
+    no.alertBody = n.title;
+    
+    /* set the tag for deleting */
+    NSDictionary *userInfo = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%d", number] forKey:@"index"];
+    
+    no.userInfo = userInfo;
+
+    /* save class */
+    [[LiziHoldingClass getCurrentClass] setCurrentClass:self];
+    
+    
     [[UIApplication sharedApplication] scheduleLocalNotification:no];
     
-    
+    /* update the table view */
     [self.del updateTableViewData];
+    
+    /* distroy */
     [self hidingNow:nil];
     
 }

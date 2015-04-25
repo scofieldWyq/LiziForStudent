@@ -9,6 +9,9 @@
 #import "LiziAppDelegate.h"
 #import "NUPTFirstMainPage.h"
 #import "LiziColor.h"
+#import "LiziAlarmAdd.h"
+#import "LiziHoldingClass.h"
+#import "alarmViewController.h"
 
 @implementation LiziAppDelegate
 
@@ -35,6 +38,10 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    LiziAlarmAdd *alarm = [[LiziHoldingClass getCurrentClass] current];
+    [alarm.del changedData];
+    
     NSLog(@"notification deal");
 }
 

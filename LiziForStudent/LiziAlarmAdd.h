@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+@class LiziMyNotification;
 @class LiziNotificationDetail;
+
+
 @protocol updateView<NSObject>
 @optional
 - (void)updateTableViewData;
+- (void)changedData;
 @end
+
 @interface LiziAlarmAdd : UIViewController
 @property (nonatomic, strong) LiziNotificationDetail *notificationDetailAdd;
 @property (nonatomic, strong) id<updateView> del;
