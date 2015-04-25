@@ -17,9 +17,10 @@
 @property (weak, nonatomic) IBOutlet UITableView *latestTableList;
 @property (nonatomic, strong) UIButton *feed_back;
 @property (nonatomic) BOOL off_first_row;
-//@property (nonatomic, strong) UITableView *latestTableLIst;
 @end
 @implementation latestViewController
+
+
 
 - (void)viewDidLoad {
     

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A84B138C-1EEA-4EF8-A115-9760A50F5A69</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LiziForStudent</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F8D14426-13AC-4FC2-A288-C1DA22E43EAD</key>
+		<string>ssh://github.com/scofieldWyq/LiziForStudent.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LiziForStudent.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F8D14426-13AC-4FC2-A288-C1DA22E43EAD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/scofieldWyq/LiziForStudent.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F8D14426-13AC-4FC2-A288-C1DA22E43EAD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F8D14426-13AC-4FC2-A288-C1DA22E43EAD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LiziForStudent</string>
+		</dict>
+	</array>
+</dict>
+</plist>

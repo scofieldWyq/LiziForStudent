@@ -237,13 +237,6 @@
 				D16493F21AE3DB0F0052DB33 /* Tools */,
 				D164937F1AE3D5420052DB33 /* LiziAppDelegate.h */,
 				D16493801AE3D5420052DB33 /* LiziAppDelegate.m */,
-				D193F3F11AE959600072DB50 /* LiziLatestDetail.h */,
-				D193F3F21AE959600072DB50 /* LiziLatestDetail.m */,
-				D12BC8021AE9D339009C93DF /* LiziAlarmAdd.h */,
-				D12BC8031AE9D339009C93DF /* LiziAlarmAdd.m */,
-				D12BC8051AEA068F009C93DF /* LiziNotificationDetail.h */,
-				D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */,
-				D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */,
 				D16493821AE3D5420052DB33 /* Images.xcassets */,
 				D16493771AE3D5420052DB33 /* Supporting Files */,
 			);
@@ -299,6 +292,11 @@
 		D16493F31AE3DB5B0052DB33 /* alarm */ = {
 			isa = PBXGroup;
 			children = (
+				D12BC8021AE9D339009C93DF /* LiziAlarmAdd.h */,
+				D12BC8031AE9D339009C93DF /* LiziAlarmAdd.m */,
+				D12BC8051AEA068F009C93DF /* LiziNotificationDetail.h */,
+				D12BC8061AEA068F009C93DF /* LiziNotificationDetail.m */,
+				D12BC8071AEA068F009C93DF /* LiziNotificationDetail.xib */,
 				D164939F1AE3D6080052DB33 /* alarmViewController.h */,
 				D16493A01AE3D6080052DB33 /* alarmViewController.m */,
 				D16493A11AE3D6080052DB33 /* alarmViewController.xib */,
@@ -309,6 +307,8 @@
 		D16493F41AE3DB6D0052DB33 /* latest */ = {
 			isa = PBXGroup;
 			children = (
+				D193F3F11AE959600072DB50 /* LiziLatestDetail.h */,
+				D193F3F21AE959600072DB50 /* LiziLatestDetail.m */,
 				D16493A61AE3D6080052DB33 /* latestViewController.h */,
 				D16493A71AE3D6080052DB33 /* latestViewController.m */,
 				D16493A81AE3D6080052DB33 /* latestViewController.xib */,

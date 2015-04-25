@@ -60,10 +60,12 @@
 @end
 @implementation signUpViewController
 
+/* cancel the edit mode */
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
 
+/* when the view loaded */
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -71,13 +73,15 @@
     [_signClassTableList setDataSource:self];
     [_signClassTableList setDelegate:self];
     
+    /* load the nib file for cell */
     UINib *nib = [UINib nibWithNibName:@"signUpCell" bundle:nil];
-    
     [self.signClassTableList registerNib:nib forCellReuseIdentifier:@"signUpCell"];
     self.signClassTableList.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    /* when complete the view, do something */
     [self prepareSignView];
     
+    /* set the sign in code property */
     _s1.delegate = self;
     _s2.delegate = self;
     _s3.delegate = self;
@@ -96,7 +100,6 @@
     
     /* init the feed_back button */
     self.feed_back = [[UIButton alloc] init];
-    
     [self.feed_back setBackgroundImage:[UIImage imageNamed:@"fab"] forState:UIControlStateNormal];
     [self.feed_back setFrame:CGRectMake(0, 0, 30, 30)];
     
@@ -115,8 +118,6 @@
     [[LiziCurses getCurses] templation];
     
     [self.notificationDetail setEditable:NO];
-//    [self prepareData];
-
 }
 
 - (void)feedBack:(UIButton *)sender {
@@ -140,15 +141,12 @@
     }
 }
 
-- (void)prepareData {
-    
-    LiziStudent *stu = [LiziStudent me];
-    
-    _datas = stu.courses;
-    
-}
 
-- (void)prepareSignView {
+- (void)prepareSignView
+/*
+ * do something before completed the view.
+ */
+{
     
     _signViewCenterX = self.view.frame.size.width / 2;
     _signViewCenterHideX = self.view.frame.size.width + _signViewCenterX;
@@ -199,7 +197,7 @@
     // if sign in success show or...
     [self.signIn_completed setHidden:NO];
     
-    [UIView animateWithDuration:3.0 animations:^{
+    [UIView animateWithDuration:1.5 animations:^{
         [self.signIn_completed setAlpha:0.0];
         
     } completion:^(BOOL finished) {
@@ -256,9 +254,10 @@
     
 }
 - (IBAction)students:(id)sender {
+    //get the students info preview.
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 /*
  * set the feedBack button
  */
@@ -295,7 +294,7 @@
     }
 }
 
-}
+/* when the cell be selected, call this method by delegate */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     /* set navigation property */
@@ -310,7 +309,7 @@
     self.teacherName.text = myclass.c_teacher;
     self.schoolName.text = @"南京邮电大学";
     self.notificationDetail.text = myclass.c_info;
-    self.notificationUpdateTime.text = @"12:01";
+    self.notificationUpdateTime.text = [NSString stringWithFormat:@"%d:%d", rand()%24, rand()%60 ];
     
     /* change view */
     [self showClassDetail:_signView];
